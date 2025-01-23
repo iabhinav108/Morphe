@@ -70,25 +70,17 @@ This method significantly **reduces computational cost** while maintaining detec
 ## **How to Use**  
 ### **1. Installation**  
 ```bash
-git clone https://github.com/your-repo/deepfake-detection.git
-cd deepfake-detection
-pip install -r requirements.txt
+git clone https://github.com/iabhinav108/Morphe.git
+cd Morphe
+pip install -r backend/requirements.txt
 ```
 
 ### **2. Running Inference**  
 ```python
-python detect_deepfake.py --video_path sample.mp4
+cd backend
+python app.py
 ```
 
-### **3. Training the Model**  
-```python
-python train.py --epochs 20 --batch_size 32 --lr 0.0001
-```
-
-### **4. Evaluating the Model**  
-```python
-python evaluate.py --model_path model.pth
-```
 
 ## **Future Improvements**  
 - Incorporating temporal analysis for video-based deepfake detection.  
