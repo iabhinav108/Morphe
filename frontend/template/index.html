@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <title>Morphē</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <a href="index.html#home"> <img src="{{ url_for('static', filename='assests/logo.png') }}" alt="Morphē Logo"></a>
+        </div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Parallax Section 1 -->
+    <div class="parallax parallax-1" id="home">
+        <div class="content">
+          <div class="intro">
+            <h2>Unmask the Illusion</h2>
+            <h1>Morphē</h1>
+            <p>
+                AI-powered deepfake detection with precise accuracy,
+            </p>
+            <p> revealing the truth behind every frame.</p>
+          </div>
+
+
+            <!-- New Video Upload Section -->
+
+          <div class="container">
+              <h4>Upload a Video for DeepFake Detection</h4>
+              
+              <!-- Form for video upload -->
+              <form action="/" method="post" enctype="multipart/form-data">
+                  <input type="file" name="video" accept="video/*" required>
+                  <button type="submit">Upload Video</button>
+              </form>
+    
+              <!-- Black box where video will be displayed -->
+              <div class="video-box">
+                  <video id="videoPlayer" controls></video>
+              </div>
+    
+              <!-- Commented out Controls: Start button 
+              <div class="controls">
+                  <button id="startButton">Start Detection</button>
+              </div>-->
+    
+              <!-- Output area 
+              <div class="output">
+                  <label>Output: </label>
+                  <span id="outputField">No video processed yet.</span>
+              </div>-->
+          </div>
+
+          </div>
+
+        </div>
+        
+    </div>
+
+    <!-- Service Section -->
+    <section class="service-section" id="services">
+        <h2>Our Services</h2>
+        <div class="service-container">
+            <div class="service-box">
+                <img src="{{ url_for('static', filename='assests/service-1.png') }}" alt="Deepfake Detection">
+                <h3>Deepfake Detection</h3>
+                <p>Analyze videos and images with our AI model to accurately assess the likelihood of deepfake content.</p>
+            </div>
+            <div class="service-box">
+                <img src="{{ url_for('static', filename='assests/service-2.png') }}" alt="Real-Time Analysis">
+                <h3>Real-Time Analysis</h3>
+                <p>Instant, efficient processing to identify manipulated media in real-time.</p>
+            </div>
+            <div class="service-box">
+                <img src="{{ url_for('static', filename='assests/service-3.png') }}" alt="Comprehensive Reporting">
+                <h3>Comprehensive Reporting</h3>
+                <p>Receive in-depth reports that break down the analysis, offering insights into deepfake indicators.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Parallax Section 2 -->
+    <div class="parallax parallax-2">
+        <div class="quote-section">
+            <div class="quote-container">
+                <p class="quote">
+                    <span class="quote-mark">“</span>When reality is no longer certain,<br>our tools to expose deception become the gatekeepers of authenticity.<span class="quote-mark-right">”</span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="parallax-3">
+        
+            <div class="about-section">
+                <div class="about-container">
+                    <h1>ABOUT US</h1>
+                    <p class="about-main">
+                        We are at the forefront of combating digital deception. Our team is committed to creating cutting-edge technology that protects the integrity of media in an era where truth is increasingly challenged.
+                    </p>
+                    <p class="about-sub">
+                        Why choose us? We offer precision-driven analysis powered by advanced AI, designed to accurately assess the authenticity of images and videos. Whether you're a content creator, a journalist, or a business, our services provide you with the tools to confidently verify the truth behind every frame. With our expertise, you can trust that what you see is genuinely real. In a world where manipulated media can distort reality, we're here to ensure authenticity prevails.
+                    </p>
+                </div>
+                <footer>
+                    <p>© Morphē - Deepfake detector</p>
+                </footer>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

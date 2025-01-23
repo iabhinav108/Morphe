@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+  
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    height: 50px;
+    background-color: #f5e5e1;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+  
+/* Logo */
+.logo img {
+    max-height: 50px;
+}
+  
+/* Navigation */
+nav {
+    display: flex;
+    gap: 30px;
+}
+  
+nav a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 400;
+    font-size: 18px;
+    transition: color 0.3s;
+    margin-top: 5px;
+}
+  
+nav a:hover {
+    color: #007BFF;
+}
+  
+  
+/* Parallax container */
+.parallax {
+    height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 100px; /* Added padding to avoid overlap with fixed header */
+}
+  
+/* First Section - Hero */
+.parallax-1 {
+    background-image: url('static/assests/home1.png');
+    color: #000;
+}
+
+.parallax-1 .content {
+    margin-top: -30px; /* Move content 30px up */
+    position: relative; /* Required to use top/bottom positioning */
+}
+
+  
+.parallax-1 h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #000;
+}
+  
+/* Get Started Button */
+.get-started {
+    background-color: #00b5d8;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+  
+.get-started:hover {
+    background-color: #007bff;
+}
+  
+/* Second Parallax Section */
+.parallax-2 {
+    background-image: url('/static/assests/pic.png');
+}
+  
+/* Service section */
+.service-section {
+    padding: 50px;
+    background-color: #fff;
+}
+  
+.service-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 36px;
+}
+  
+.service-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+  
+.service-box {
+    width: 30%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+  
+.service-box img {
+    max-width: 100%;
+    height: auto;
+}
+  
+.service-box h3 {
+    font-size: 24px;
+    margin-top: 20px;
+}
+  
+.service-box p {
+    font-size: 16px;
+    color: #666;
+    margin-top: 10px;
+}
+  
+ body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+  
+.quote-section {
+    background-color: #7D8288;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+}
+  
+.quote-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+  
+.quote {
+    font-size: 24px;
+    font-style: italic;
+    line-height: 1.6;
+    color: white;
+}
+  
+.quote-mark {
+    font-size: 50px;
+}
+  
+.quote-mark-right {
+    font-size: 50px;
+}
+.about-section {
+    background-image: url('/static/assests/about-us.png'); /* Use your actual image path */
+    background-size: cover;
+    background-position: center;
+    color: black;
+    padding: 100px 0;
+    text-align: center;
+}
+  
+.about-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+}
+  
+.about-main {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+  
+.about-sub {
+    font-size: 15px;
+    line-height: 1.7;
+}
+  
+footer {
+    background-color: #E4D4D2;
+    text-align: center;
+    padding: 10px;
+    color: #000;
+    font-size: 14px;
+    margin-top: 150px; /* Adds space between the footer and the content above */
+    border-top: 2px solid #ccc;
+    bottom: 0;
+  
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+  
+footer p {
+    margin: 0;
+}
+
+
+intro{
+    margin-top: -30px;
+}
+
+
+.container{
+    margin-top: 100px;
+}
+
+  
+
+@media (max-width: 768px) {
+    .service-box {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
