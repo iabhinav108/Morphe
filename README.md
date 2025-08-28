@@ -85,7 +85,7 @@ python app.py
 ## **Future Improvements**  
 - Incorporating temporal analysis for video-based deepfake detection.  
 - Exploring **GAN-based adversarial training** for robustness.  
-- Enhancing performance on low-quality or compressed videos.  
+- Enhancing performance on low-quality or compressed videos. 
   
 
 
